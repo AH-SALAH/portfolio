@@ -1,0 +1,308 @@
+@import "./variables/variables";
+@import "./mixins/mixins";
+
+
+// ***************************** //
+		// HEADER SCSS
+// ***************************** //
+
+nav.top-navi {
+	background:$primary-color none no-repeat scroll 0 0 !important;
+    @include border(none!important);
+    @include border-radius(0px!important);
+    margin-bottom: 0;
+    z-index: 16;
+
+    	& li a:hover{
+    		background: darken($primary-color,10%)!important;
+    		@include border-radius(7px);
+    		@include box-shadow(0 4px 0px 0px darken($primary-color,20%) );
+    	}
+
+    	.nav-container {
+    		margin-bottom: 10px;
+    		margin-top: 10px;
+    		@include media(S) {
+    			@include translate(0,0); 
+    		} 
+    	}
+    	.navbar-nav.nav-ul{margin: 5px auto;}
+    	.navbar-header a,.navbar-nav li a{color: #fff!important;}
+    	.navbar-toggle{
+    		@include transition(all 0.2s ease-out);
+    		padding: 9px;
+
+    		& .icon-bar{background: $secondary-color;}
+
+    	}
+    	.navbar-toggle:hover,.navbar-toggle:focus{background: darken($primary-color,10%);}
+    	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{background: $secondary-color!important;@include border-radius(7px);}
+    	// .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{background: none!important;}
+    	.navbar-nav li a{padding: 10px;}
+    	.navbar-nav li a:focus,
+    	.navbar-nav li a:active{background: $secondary-color!important;@include box-shadow(none);@include border-radius(7px);}
+    	// .navbar-nav .active{background: $secondary-color!important;}
+    	.navbar-nav li {margin-left: 5px;margin-right: 5px;}
+    	// .navbar-nav li:hover{
+    	// 	background: darken($primary-color,10%)!important;
+    	// 	@include border-radius(7px);
+    	// }
+    	.navbar-nav .active a{background: darken($primary-color,10%)!important;@include border-radius(7px);
+    		&:hover{@include box-shadow(0 4px 0px 0px darken($primary-color,20%) );}
+    		}
+    	.navbar-nav .fa.fa-chevron-down{font-size: 10px;}
+    	.dropdown > a:active{background: none;}
+    	.dropdown .dropdown-menu {
+		    background: $secondary-color none repeat scroll 0 0;
+		    margin-top: 10px;
+		    left: 0;
+		    right: auto;
+		    @include border-radius(4px!important);
+
+		    &:before{
+		    	@include pseudo($bg:$secondary-color,$top:-4px,$left:8px);
+		    	@include rotate(45);
+		    	width: 30px;
+		    	height: 30px;
+		    	z-index: -1;
+		    }
+
+		    & li {
+			    margin: 5px 10px!important;
+
+			    & a{position: relative;padding: 7px;@include bg-color(rgba(255,255,255,0.15));
+
+			    	
+
+					&:hover{
+				    	@include box-shadow(none);
+				    }
+			    }
+
+			    
+			    & a:before{@include pseudo("\f054",$position:null); margin-right: 6px;margin-left: 6px;font-size: 10px;  }
+			}
+		}
+
+}
+
+// ----------------------------------------------------------
+
+form.navbar-form {
+    @include border(none!important);
+    @include box-shadow(none!important);
+}
+
+form.navbar-form .search-input {
+	width: 0;
+	margin-left: 0px;
+	padding: 0px;
+	@include transition(all 0.3s ease-out 0.3s);
+}
+
+.form-group{
+	width: 0px;
+	// border-left: 1px solid;
+	// padding-left: 5px;
+	@include transition(all 0.5s ease-out);
+}
+
+.show-search-input{
+	width: 100%!important;
+	padding: 6px 12px!important;
+}
+
+.show-form-group{
+	width: 170px;
+
+	@include media(S){width: 100%;}
+}
+
+button.search-icon {
+    background: none;
+    @include border(none);
+    font-size: 20px;
+    color:#fff;
+    @include transition(all 0.3s ease-out);
+
+    & i {@include transition(all 0.2s ease-out);}
+
+    &:hover{
+    	background: none;
+    	color:#fff;
+    	@include border(none);
+
+    	& i {@include scale(1.2);}
+	}
+
+}
+
+
+// --------------------------------------------------
+
+.navbar-brand > span {
+    font-size: 30px;
+}
+
+.lip-pic {
+    display: inline-block!important;
+    height: auto;
+    // margin: 7px 0 0 5px;
+    margin: 0 5px;
+    width: 20px;
+}
+
+
+// --------------------------------------------------
+
+.nav-ruler{padding: 0;overflow: hidden;}
+
+.ruler-wrapper{
+	// width: 100%;
+	display: inline-flex;
+
+	& .ruler {
+	    background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
+	    display: inline-block;
+	    height: 15px;
+	    margin: 0 auto;
+	    padding: 0;
+	    text-align: center;
+	    width: 62px;
+	    position: relative;
+	    bottom: -5px;
+	    z-index: -1;
+
+	    & .cm {
+		    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+		    display: inline-block;
+		    height: 15px;
+		    width: 3px;
+		}
+
+		& .mm {
+		    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+		    display: inline-block;
+		    height: 6px;
+		    width: 2px;
+		}
+
+		& .c5m {
+		    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+		    display: inline-block;
+		    height: 8px;
+		    width: 3px;
+		}
+
+	}
+
+}
+// --------------------------------------------------
+
+/* Carousel base class */
+#myCarousel {
+  height: 550px;
+  margin-bottom: 60px;
+
+	/* Since positioning the image, we need to help out the caption */
+	& .carousel-caption {
+	  	z-index: 10;
+    	top: 20%;
+    	left: 30%;
+    	right: 30%;
+    	text-align: center;
+    	margin: 0 auto;
+    	& h1 {
+    		margin-bottom: 0;
+    		@include media(XS){font-size: 1.7em;}
+    		@include media(XXS){font-size: 1.6em;}
+    		 }
+    	& h1 span strong{
+    		background: $secondary-color;
+    		padding: 0 7px; 
+    		@include border-radius(4px);
+    		letter-spacing: 5px;
+    		vertical-align: super;
+    	}
+    	
+    	& p{
+    		background: rgba(0,0,0,0.5);
+    		padding: 15px;
+    		// margin: 20px 0 0 0;
+    		@include border-radius(4px);
+
+    		
+    		}
+		& span{display: block;}
+		& span.caption-btn{
+			display: table;
+			padding: 10px;
+			margin: 20% auto auto;
+			@include box-shadow(0 0 4px 0 #000000);
+			@include border-radius(10px);
+			@include transition(all 0.3s ease-out);
+
+			&:hover{
+				margin: 17% auto auto;
+				@include box-shadow(0 1px 10px 0 #000000);
+
+				& a{background: rgba(26,168,214,1);}
+			}
+
+
+			& a{
+				background: rgba(26,168,214,0.20);
+				@include border(0 none);
+				@include transition(all 0.3s ease-out);
+			}
+
+		}
+
+    	& a i{display: block;}
+	}
+
+	/* Declare heights because of positioning of img element */
+	& .item {
+	  	height: 550px;
+	
+	& > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 550px; }
+
+	}
+
+	& .carousel-indicators {
+	    bottom: -40px!important;
+	    & li{width: 50px; height: 6px; background: #ccc;
+	    	&.active{width: 50px; height: 6px; background: $secondary-color;}
+	    }
+	}
+
+	& .carousel-control{width: auto;}
+
+	& .right.carousel-control .fa.fa-angle-double-right{
+		background: $secondary-color none repeat scroll 0 0;
+	    @include border-radius(5px 0 0 5px);
+	    font-size: 40px;
+	    padding: 10px;
+	    position: absolute;
+	    right: 0;
+	    top: 47%;
+	}
+
+	& .left.carousel-control .fa.fa-angle-double-left{
+		background: $secondary-color none repeat scroll 0 0;
+	    @include border-radius(0px 5px 5px 0px);
+	    font-size: 40px;
+	    padding: 10px;
+	    position: absolute;
+	    left: 0;
+	    top: 47%;
+	}
+
+
+
+}

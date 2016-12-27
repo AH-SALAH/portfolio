@@ -1,0 +1,219 @@
+@import "./variables/variables";
+@import "./mixins/mixins";
+
+
+// ***************************** //
+		// FOOTER SCSS
+// ***************************** //
+
+.footer{
+	background: $primary-color;
+	overflow: hidden;
+	padding: 0 0 4%;
+
+	& a,p{color: #fff;}
+
+	& ul{
+		padding: 0;
+
+		& a:hover{color: $secondary-color;}
+
+	}
+
+	& li{margin: 6px auto;}
+
+	& .footer-ruler{
+		margin: 0 -15px;
+		padding: 0;
+
+		& .ruler-wrapper {
+		    margin: 0 auto;
+		    @include opacity(0.5);
+		    position: relative;
+		    top: 5px;
+		    @include rotate(180);
+
+		    & .ruler .cm,.ruler .mm,.ruler .c5m{
+		    	background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+		    }
+
+		}
+	}
+
+	& .footer-logo-div p{padding: 0 4px;}
+
+	& .footer-commu-div > h1,.footer-comp-div > h1,.footer-blog-div > h1{font-size: 20px; margin: 25px auto 23px auto;}
+	& .footer-blog-div > h1{color: #fff;font-family: Tahoma;}
+	& .footer-commu-div > ul,.footer-comp-div > ul{padding-left: 15px;}
+
+	& .footer-logo-div > h1{font-weight: 600;color: #fff;}
+
+	& .footer-comp-div ul li,.footer-commu-div ul li{
+		position: relative;
+		padding-left: 15px;
+
+		& a{font-size: 13px;}
+
+		& a:hover:before{left:5px; @include rotate(360);}
+
+		& a:before{
+			@include pseudo('\f054',$top:4px,$right:null);
+			@include transition(all 0.2s ease-out);
+			font-size: 10px;
+			color: #fff;
+		}
+
+	}
+
+
+	& .footer-blog-div li {
+		
+		& .row{
+		    margin: 0 0 20px;
+		}
+
+		& .img-div{
+			padding-right: 0px;
+			padding-left: 0px;
+
+			& img{
+				width: 100%;
+				height: auto;
+			}
+
+		}
+
+		& .excerpt small{color: #2f4f4f;}
+
+	}
+
+
+}
+
+// -------------------------------------------
+
+
+.map{padding: 0;margin-bottom: -4px; background: $primary-color;}
+
+
+
+
+// -------------------------------------------
+
+.cr{
+	background: darken($primary-color,7%);
+	height: auto;
+
+	& .copyright{
+		float: left;
+		margin: 16px auto auto;
+		text-align: left;
+		color: #fff;
+		padding: 0;
+
+		& p{margin: 0;}
+	}
+
+	& .social{
+		float: right;
+		margin: 13px auto auto;
+		text-align: right;
+		padding: 0;
+
+		& ul{
+			margin: 0;
+
+			& li{
+				margin: 0 0px 8px 0;
+				font-size: 22px;
+				display: inline-block;
+
+				& a{
+					color: #fff;
+					@include opacity(0.5);
+					position: relative;
+					display: inline-block;
+					text-align: center;
+					width: 40px;
+					height: 40px;
+					@include transition(all 0.5s ease-out);
+
+					&:before{
+						@include pseudo($top:-3px,$bg:lighten($secondary-color,10%) );
+						@include border-radius(50%);
+						width: 100%;
+						height: 100%;
+						margin: 0 auto;
+						text-align: center;
+						display: inline-block;
+						z-index: -1;
+						@include opacity(0);
+					}
+
+					&:hover{
+						@include opacity(1);
+
+					}
+
+					&:hover:before{
+						@include animation(bloom,0.5s cubic-bezier(0.3, 0, 0.5, 0) );
+						// @include transition(all 0.5s ease-out);
+						@include keyframes(bloom){
+							0%{@include scale(0); @include opacity(0);}
+							10%{@include scale(0.2); @include opacity(0.1);}
+							20%{@include scale(0.3); @include opacity(0.2);}
+							30%{@include scale(0.5); @include opacity(0.3);}
+							40%{@include scale(0.7); @include opacity(0.4);}
+							50%{@include scale(0.8); @include opacity(0.5);}
+							60%{@include scale(0.9); @include opacity(0.6);}
+							70%{@include scale(1); @include opacity(0.5);}
+							80%{@include scale(1.1); @include opacity(0.4);}
+							90%{@include scale(1.2); @include opacity(0.2);}
+							100%{@include scale(1.3); @include opacity(0);}
+						}
+						// @include opacity(1);
+					}					
+
+					&:hover .fa.fa-facebook{color:#0000ff;}
+					&:hover .fa.fa-twitter{color:#87ceeb;}
+					&:hover .fa.fa-google-plus{color:#ff0000;}
+					&:hover .fa.fa-rss{color:#ffa500;}
+
+				}
+
+			}
+
+		}
+
+
+	}
+
+
+
+	& .to-top{
+		position: fixed;
+		right: -10%;
+		bottom: 3%;
+		@include opacity(0);
+		background: $primary-color;
+		@include border-radius(2px);
+		@include box-shadow(0 0 2px 0 #000);
+		@include transition(font-size 0.3s ease-out);
+
+		& a{padding: 2px 6px 2px 8px;}
+
+		&:hover{
+			background: darken($primary-color,10%);
+			@include box-shadow(0 0 2px 0 #fff);
+			font-size: 40px;
+			@include border-radius(20px 20px 0px 0);
+		}
+
+		& span{
+			font-size: 20px;
+			@include transition(all 0.3s ease-out);
+		}
+	}
+
+
+}
