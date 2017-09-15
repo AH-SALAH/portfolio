@@ -1,2 +1,2 @@
-<a onclick="window.open('http://as.iblogger.org',''); return false;"  href="javascript:void(0);" ># Demo</a>
+<a href="http://as.iblogger.org" target="_blank"># Demo</a>
 
