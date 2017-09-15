@@ -1,0 +1,10 @@
+/*
+Theme Name: asns
+Template: asns
+Template Direction: rtl
+*/
+
+body{
+	  direction: rtl;
+	  unicode-bidi: embed;
+}

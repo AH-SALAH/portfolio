@@ -1,0 +1,118 @@
+<svg id="about-circle"  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 500 400">
+
+
+
+
+	<defs>
+
+
+  <style type="text/css">
+
+svg{
+  
+
+  	text-align:center;
+    margin:0 auto;
+}
+
+
+
+.about-circle{
+
+
+filter:drop-shadow(0 0px 2px black);
+
+  stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+
+  -webkit-animation: about-circle  5s ease-in-out alternate  infinite  ;
+  -moz-animation: about-circle  5s ease-in-out alternate  infinite  ;
+  -o-animation: about-circle  5s ease-in-out alternate  infinite  ;
+  animation: about-circle  5s ease-in-out alternate  infinite  ;
+
+  -webkit-transition:fill 0.8s linear;
+  -moz-transition:fill 0.8s linear;
+  -o-transition:fill 0.8s linear;
+  transition:fill 0.8s linear;
+}
+
+@keyframes about-circle  {
+  from {
+    stroke-dashoffset: 10;
+    
+  }
+  to {
+    stroke-dashoffset: 1000;
+    fill:crimson;
+  }
+
+}
+
+@-webkit-keyframes about-circle  {
+  from {
+    stroke-dashoffset: 10;
+
+    
+  }
+  to {
+    stroke-dashoffset: 1000;
+    fill:crimson;
+  }
+
+}
+
+
+
+.about-circle:hover{
+  
+  cursor:pointer;
+
+}
+
+
+#about-circle.clickit .about-circle{
+  
+fill:#000;
+stroke:maroon;
+
+}
+
+
+/**************************/
+
+
+
+
+
+
+/*************************/
+
+</style>
+
+
+
+ </defs>
+
+
+<script type="text/javascript">
+
+var clicker = document.querySelector('#about-circle');
+
+clicker.addEventListener('click', function(){
+  
+this.classList.toggle('clickit');
+
+
+});
+
+</script>
+
+
+ <g  transform="translate(0,-652.36218)">
+
+  <path class="about-circle" stroke-linejoin="round" d="m385.36,199.61c0,83.002-68.839,150.29-153.76,150.29-84.918,0-153.76-67.287-153.76-150.29,0-83.002,68.839-150.29,153.76-150.29,84.918,0,153.76,67.287,153.76,150.29z" stroke-dashoffset="0" transform="matrix(1.1161308,0,0,1.1418878,-8.5880251,624.42897)" stroke="#c8b7d0" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="15.94421868, 10" stroke-width="6" fill="indigo"/>
+
+ </g>
+
+</svg>
+

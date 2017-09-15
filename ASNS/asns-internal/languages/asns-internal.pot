@@ -1,0 +1,724 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: ASNS-Internal\n"
+"POT-Creation-Date: 2016-08-10 15:41+0200\n"
+"PO-Revision-Date: 2016-08-10 15:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:115
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:119
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:73
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:81
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:84
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:87
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:90
+msgid "Asides"
+msgstr ""
+
+#: archive.php:93
+msgid "Images"
+msgstr ""
+
+#: archive.php:96
+msgid "Videos"
+msgstr ""
+
+#: archive.php:99
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:102
+msgid "Links"
+msgstr ""
+
+#: archive.php:105
+msgid "Archives"
+msgstr ""
+
+#: archive.php:154 content-search.php:31 content.php:297
+#: inc/custom-templates/custom-template-page-content.php:74
+#: inc/custom-templates/custom-template-page-content.php:80
+msgid "more...「続く」"
+msgstr ""
+
+#: author-bio.php:23
+msgid "Published by"
+msgstr ""
+
+#: author-bio.php:67
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38 comments.php:57
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:39 comments.php:58
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:40 comments.php:59
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:77
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: comments.php:81
+msgid "Please Post Your Comments & Reviews"
+msgstr ""
+
+#: comments.php:81
+msgid "Glad you have chosen to leave a comment"
+msgstr ""
+
+#: comments.php:82
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:83
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:84
+msgid "  &#1161;  Comment"
+msgstr ""
+
+#: comments.php:86
+msgctxt "noun"
+msgid "comment"
+msgstr ""
+
+#: comments.php:87
+msgid ""
+"Express your thoughts, idea or write a feedback by clicking here & start an "
+"awesome comment"
+msgstr ""
+
+#: comments.php:92
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:98
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:98
+msgid "Log out"
+msgstr ""
+
+#: comments.php:98
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\""
+msgstr ""
+
+#: comments.php:105
+msgid ""
+"Please,Do NOT use keywords in the name field.And note that all links are "
+"nofollow."
+msgstr ""
+
+#: comments.php:105
+msgid "Lets have a personal and meaningful conversation."
+msgstr ""
+
+#: comments.php:110
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: comments.php:120
+msgid "Your Name (No Keywords)"
+msgstr ""
+
+#: comments.php:126
+msgid "Your email address will not be published "
+msgstr ""
+
+#: comments.php:131
+msgid "your site url"
+msgstr ""
+
+#: content-search.php:31 content.php:297
+#: inc/custom-templates/custom-template-page-content.php:73
+#: inc/custom-templates/custom-template-page-content.php:79
+msgid "read more..読む続き"
+msgstr ""
+
+#: content-search.php:39 content-search.php:44 image.php:36 image.php:80
+#: inc/custom-templates/comment-functions.php:33
+#: inc/custom-templates/comment-functions.php:62
+msgid "Edit"
+msgstr ""
+
+#: content.php:41 inc/custom-templates/custom-template-page-content.php:35
+msgid "about"
+msgstr ""
+
+#: content.php:42
+msgid "location"
+msgstr ""
+
+#: content.php:43
+msgid "notes"
+msgstr ""
+
+#: content.php:47
+#, php-format
+msgid "Latest Comments | %d total"
+msgstr ""
+
+#: content.php:53
+msgid "Designed & Developed By アハマド　サラーハ"
+msgstr ""
+
+#: content.php:53
+msgid "アハマド　サラーハで"
+msgstr ""
+
+#: content.php:53
+msgid "設計したと開発したです"
+msgstr ""
+
+#: content.php:58
+msgctxt "copy right"
+msgid "© CR"
+msgstr ""
+
+#: content.php:78
+msgid "ビデオ"
+msgstr ""
+
+#: content.php:97
+msgid "NO VIDEOS FOR NOW"
+msgstr ""
+
+#: content.php:120 content.php:408
+msgid "loading"
+msgstr ""
+
+#: content.php:148
+msgid "二つのクリックを"
+msgstr ""
+
+#: content.php:148
+msgid "double click me"
+msgstr ""
+
+#: content.php:191
+msgid "僕"
+msgstr ""
+
+#: content.php:311
+msgid "ago"
+msgstr ""
+
+#: footer.php:19
+msgid "seagreen"
+msgstr ""
+
+#: footer.php:20
+msgid "darkgoldenrod"
+msgstr ""
+
+#: footer.php:21
+msgid "darkslateblue"
+msgstr ""
+
+#: footer.php:22
+msgid "darkslategray"
+msgstr ""
+
+#: footer.php:23
+msgid "darkkhaki"
+msgstr ""
+
+#: footer.php:24
+msgid "デフォルトに戻る"
+msgstr ""
+
+#: footer.php:42
+msgid "share"
+msgstr ""
+
+#: footer.php:50
+msgid "switch off/on"
+msgstr ""
+
+#: footer.php:64 page-footer.php:11 single-footer.php:11
+msgid "All rights reserved"
+msgstr ""
+
+#: footer.php:76
+msgid "わぁ~! 戻る...(~ょ~)"
+msgstr ""
+
+#: functions.php:120
+msgid "nav"
+msgstr ""
+
+#: functions.php:121
+msgid "l-menu"
+msgstr ""
+
+#: functions.php:220
+msgid "post-sidebar"
+msgstr ""
+
+#: functions.php:312
+msgctxt "Noto Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:323
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:334
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:345
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: functions.php:448
+msgid "<span>Pages&raquo;</span>"
+msgstr ""
+
+#: functions.php:453
+msgid "Next page"
+msgstr ""
+
+#: functions.php:454
+msgid "Previous page"
+msgstr ""
+
+#: functions.php:598
+msgid "0 View"
+msgstr ""
+
+#: functions.php:600
+#, php-format
+msgid "%d Views"
+msgstr ""
+
+#: functions.php:624
+msgid "Views"
+msgstr ""
+
+#: functions.php:867
+msgid "Home"
+msgstr ""
+
+#: functions.php:1058
+msgid "year"
+msgstr ""
+
+#: functions.php:1058
+msgid "years"
+msgstr ""
+
+#: functions.php:1059
+msgid "month"
+msgstr ""
+
+#: functions.php:1059
+msgid "months"
+msgstr ""
+
+#: functions.php:1060
+msgid "week"
+msgstr ""
+
+#: functions.php:1060
+msgid "weeks"
+msgstr ""
+
+#: functions.php:1061
+msgid "day"
+msgstr ""
+
+#: functions.php:1061
+msgid "days"
+msgstr ""
+
+#: functions.php:1062
+msgid "hour"
+msgstr ""
+
+#: functions.php:1062
+msgid "hours"
+msgstr ""
+
+#: functions.php:1063
+msgid "minute"
+msgstr ""
+
+#: functions.php:1063
+msgid "minutes"
+msgstr ""
+
+#: functions.php:1064
+msgid "second"
+msgstr ""
+
+#: functions.php:1064 functions.php:1104
+msgid "seconds"
+msgstr ""
+
+#: functions.php:1081
+msgid "sometime"
+msgstr ""
+
+#: functions.php:1107
+msgid " ago"
+msgstr ""
+
+#: functions.php:1161
+msgid "Read More"
+msgstr ""
+
+#: functions.php:1234
+msgid "Theme designed and developed by"
+msgstr ""
+
+#: functions.php:1400
+msgid "Page"
+msgstr ""
+
+#: image.php:25
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: image.php:41
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: image.php:42
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: image.php:62
+msgid "Pages:"
+msgstr ""
+
+#: image.php:71
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:73
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:75
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:77
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: inc/asns-admin.php:26
+msgid "Logo Picture"
+msgstr ""
+
+#: inc/asns-admin.php:30
+msgid "Fav Icon"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:65
+msgid "Blog avatar"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:79
+msgid "Visit Site"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:116
+msgid "Go to GOOGLE"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:151
+#: inc/asns-adminbar-customization.php:158
+msgid "Edit Theme"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:212
+msgid "新明けおめでとう~"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:216
+msgid "メリークリスマス"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:220
+msgid "ようこそ"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:228
+msgid "Happy New Years"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:232
+msgid "Merry Christmas"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:236
+msgid "Welcome"
+msgstr ""
+
+#: inc/asns-adminbar-customization.php:284
+msgid "My Account"
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:32
+msgid "Pingback:"
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:59
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:69
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:104
+msgid "Twitter (username)"
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:117
+#: inc/custom-templates/comment-functions.php:174
+#: inc/custom-templates/comment-functions.php:191
+msgid "Rating"
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:161
+#, php-format
+msgid "Rating : <strong> %s / 5</strong>"
+msgstr ""
+
+#: inc/custom-templates/comment-functions.php:175
+#: inc/custom-templates/comment-functions.php:223
+msgid "twitter"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:14
+#: single-header.php:81
+msgctxt "+ a user name"
+msgid "by "
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:26
+#: single-header.php:101
+msgctxt "+ a category"
+msgid "Filed in"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:32
+msgid "メタデータ"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:32
+#: single-header.php:104
+msgctxt "+ a time format"
+msgid "on"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:46
+#: single-header.php:125
+#, php-format
+msgctxt "like : 2 months ago"
+msgid " %s ago"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:53
+#: single-header.php:136
+msgctxt "+ post views count"
+msgid "with:"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page-content.php:55
+#: single-header.php:137
+msgctxt "estimated reading time"
+msgid "EST"
+msgstr ""
+
+#: inc/custom-templates/custom-template-page.php:90
+msgid "load more"
+msgstr ""
+
+#: no-results.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:28
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: no-results.php:35
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: page-content.php:40
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: page-content.php:52
+msgid "You may interested in"
+msgstr ""
+
+#: page-header.php:79 single-header.php:141
+msgid "Trigger"
+msgstr ""
+
+#: search.php:39
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:28
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:28
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:31
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: single-content.php:34
+msgctxt "tag name"
+msgid "View all posts in "
+msgstr ""
+
+#: single-content.php:34
+#, php-format
+msgctxt "tag name"
+msgid "on <a href=\"%s\" title=\""
+msgstr ""
+
+#: single-content.php:49
+msgctxt "related posts"
+msgid "You may interested in"
+msgstr ""
+
+#: single-header.php:133
+msgid "about: "
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ASNS-Internal"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/ASNS-Internal/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"theme is clean & designed for clarity. straightforward typography is "
+"readable on a wide variety of screen sizes, suitable for multiple languages "
+"and translation ready. all about slick designs ."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ASNS | AHMED SALAH"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://a7s.cu.cc/"
+msgstr ""
