@@ -1,2 +1,2 @@
-<a href="http://as.iblogger.org">Demo</a>
+<a href="http://as.iblogger.org" target="new_tab"># Demo</a>
 
