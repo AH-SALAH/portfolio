@@ -34,7 +34,7 @@
 
 <!-- <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
 <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/classie.js"></script>
-<!-- <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.nicescroll.js"></script> -->
+<!-- <script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/jquery.nicescroll.js"></script> -->
 <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/single-js.js"></script>
 
 

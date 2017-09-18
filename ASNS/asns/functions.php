@@ -702,7 +702,7 @@ function asns_javascript_detection() {
 
 
 
-add_action( 'wp_head', 'asns_javascript_detection', 0 );
+// add_action( 'wp_head', 'asns_javascript_detection', 0 );
 
 
 
@@ -721,6 +721,10 @@ function asns_scripts() {
 
 
 // wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' ); // Inside a parent theme
+wp_enqueue_style( 'fontawsome', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", false, '', 'all' ); // Inside a parent theme
+wp_enqueue_style( 'bootstrap', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", false, '', 'all' ); // Inside a parent theme
+wp_enqueue_style( 'animate', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", false, '', 'all' ); // Inside a parent theme
+
 wp_enqueue_style( 'insider-style', get_template_directory_uri() . '/css/split-intro.css' ); // Inside a parent theme
 
 wp_enqueue_style( 'split-intro-demo', get_stylesheet_directory_uri() . '/css/split-intro-demo.css', false, '1.0', 'all' ); // Inside a child theme
@@ -730,11 +734,14 @@ wp_enqueue_style( 'split-intro-demo', get_stylesheet_directory_uri() . '/css/spl
 	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js", false, null);
 	wp_enqueue_script('jquery');
 
+	wp_register_script('jqui', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/ui/1.12.0/jquery-ui.min.js", false, null);
+	wp_enqueue_script('jqui');
+
 	wp_register_script('bootjs', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", false, null);
 	wp_enqueue_script('bootjs');
 	
 
-wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js',array(), '1.1', true );
+wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js',array(), '1.1', false );
   wp_enqueue_script( 'modernizr');
 
 wp_register_script( 'classie', get_template_directory_uri() . '/js/classie.js',array(), '1.1', true );

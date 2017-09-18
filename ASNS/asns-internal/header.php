@@ -8,18 +8,11 @@
 
  */
 
-?>
-
-
-<?php
-
 // if (isset($_GET['ckattempt'])) {
 //        header("Location: " . rtrim($_SERVER['PHP_SELF'], '/'));
 // }
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -40,25 +33,25 @@
 	<?php endif; ?>
 	<link rel="shortcut icon" href="<?php $fav = esc_attr( get_option('fav_icon') ); print $fav; ?>">     
     <!-- New iOS7 Sizes -->
-<!--    <link rel="apple-touch-icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-76x76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-120x120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-152x152.png" sizes="152x152">-->
+<!--    <link rel="apple-touch-icon" href="<?php //echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="<?php //echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="<?php //echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-152x152.png" sizes="152x152">-->
     <!-- Metro Tiles -->
 <!--    <meta name="msapplication-TileColor" content="#d25353">
-    <meta name="msapplication-TileImage" content="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-152x152.png">-->
+    <meta name="msapplication-TileImage" content="<?php //echo esc_url( get_template_directory_uri() ); ?>/img/favicons/logo-icon-152x152.png">-->
     <meta name="keywords" content="personal,design,web,web design,designs,site,website,slick,slick web design,new,unique,fun,fresh design," />
 	<meta name="description" content="next generation of web design" />
 	<meta name="author" content="A7s" />
-
+<!--
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" type="text/css">-->
 <!--/************************/-->
 <?php //wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
---><!--<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/snap.svg-min.js"></script>-->
+--><!--<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/snap.svg-min.js"></script>-->
 
 <!--<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 

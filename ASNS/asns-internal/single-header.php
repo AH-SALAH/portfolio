@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
-<!-- 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<!-- 		<meta charset="<?php //bloginfo( 'charset' ); ?>" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title><?php wp_title(); ?></title>
@@ -18,18 +18,18 @@
 		<meta name="author" content="AS" />
  -->		<link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/../ASNS/img/asns-11.png">     
 
-<!--          <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/article-intro-css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/article-intro-css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/article-intro-css/component.css" />
- --> 
+<!--          <link rel="stylesheet" type="text/css" href="<?php //echo esc_url( get_template_directory_uri() ); ?>/css/article-intro-css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="<?php //echo esc_url( get_template_directory_uri() ); ?>/css/article-intro-css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="<?php //echo esc_url( get_template_directory_uri() ); ?>/css/article-intro-css/component.css" />
+  
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+-->
 <?php wp_head(); ?>
 
 <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
---> <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+-->
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -127,7 +127,7 @@
 
 					<strong> |</strong><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 					<?php _ex( 'with:','+ post views count', 'asns-internal' ); ?> <strong><?php setPostViews(get_the_ID()) ?><?php echo getPostViews( get_the_ID() ); ?>
-					 <i class="fa fa-eye" aria-hidden="true"></i> & <?php $count = ''; echo esc_html( comment_count($count) ); ?> <span class="glyphicon glyphicon-comment"></span> |</strong> <?php echo _x( 'EST', 'estimated reading time', 'asns-internal' ); ?> <span class="glyphicon glyphicon-hourglass"></span>: <strong><?php if (function_exists('asns_estimated_reading_time')){ echo asns_estimated_reading_time(); } ?></strong></div></p>
+					 <i class="fa fa-eye" aria-hidden="true"></i> &amp; <?php $count = ''; echo esc_html( comment_count($count) ); ?> <span class="glyphicon glyphicon-comment"></span> |</strong> <?php echo _x( 'EST', 'estimated reading time', 'asns-internal' ); ?> <span class="glyphicon glyphicon-hourglass"></span>: <strong><?php if (function_exists('asns_estimated_reading_time')){ echo asns_estimated_reading_time(); } ?></strong></div></p>
 					</div>
 				</div>
 			</header>

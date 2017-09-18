@@ -8,18 +8,10 @@
 
  */
 
-?>
-
-
-<?php
-
-// if (isset($_GET['ckattempt']))
-
-// {
-
-//         header("Location: " . rtrim($_SERVER['PHP_SELF'], '/'));
-
-// }
+if (isset($_GET['ckattempt']) || isset($_GET['i']))
+{
+        header("Location: " . rtrim($_SERVER['PHP_SELF'], '?'));
+}
 
 ?>
 
@@ -48,16 +40,16 @@
 		<!--<link rel="stylesheet" type="text/css" href="css/split-intro-demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/split-intro.css" />-->
 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200' rel='stylesheet' type='text/css'>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" type="text/css">
-<?php wp_head(); ?>
+<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" type="text/css">-->
 
 <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
- --><script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> -->
+ <?php wp_head(); ?>
 <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  -->
-<!--<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.nicescroll.js"></script>
+<!--<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/jquery.nicescroll.js"></script>
 -->
 
 	</head>

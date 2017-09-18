@@ -934,7 +934,7 @@ function asns_javascript_detection() {
 
 }
 
-add_action( 'wp_head', 'asns_javascript_detection', 0 );
+// add_action( 'wp_head', 'asns_javascript_detection', 0 );
 
 
 
@@ -960,86 +960,85 @@ function asns_internal_scripts() {
 if (is_home() || is_front_page() ) {
 
 //wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' ); // Inside a parent theme
+wp_enqueue_style( 'fontawsome', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", false, '', 'all' ); // Inside a parent theme
+
 wp_enqueue_style( 'insider-style', get_template_directory_uri() . '/css/asns-internal.css' ); // Inside a parent theme
 
-// wp_register_script('fontawesome', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", false, null);
-// wp_enqueue_script('fontawesome');
-
-// wp_register_script('animate', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", false, null);
-// wp_enqueue_script('animate');
+//wp_enqueue_style( 'animate', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", false, '', 'all' ); // Inside a parent theme
 
 //wp_enqueue_style( 'loading', get_template_directory_uri() . '/css/loading.css', false, '1.0', 'all' ); // Inside a parent theme
 wp_enqueue_style( 'v-menu', get_template_directory_uri() . '/css/v-menu.css', false, '1.0', 'all' ); // Inside a parent theme
 wp_enqueue_style( 'wave', get_template_directory_uri() . '/css/wave.css', false, '1.0', 'all' ); // Inside a parent theme
 wp_enqueue_style( 'switch-button', get_template_directory_uri() . '/css/switch-button.css', false, '1.0', 'all' ); // Inside a parent theme
-wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', false, '1.0', 'all' ); // Inside a parent theme
+//wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', false, '1.0', 'all' ); // Inside a parent theme
+wp_enqueue_style( 'bootstrap', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", false, '', 'all' ); // Inside a parent theme
 
 
 
 /*********************/
 
-wp_register_script('jqui', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/ui/1.11.4/jquery-ui.js", false, null);
+wp_register_script('jqui', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/ui/1.12.0/jquery-ui.min.js", false, null);
 wp_enqueue_script('jqui');
 
 wp_register_script('bootjs', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", false, null);
 wp_enqueue_script('bootjs');
 
-wp_register_script( 'snap.svg-min', get_template_directory_uri() . '/js/snap.svg-min.js',array(), '1.1', false );
-  wp_enqueue_script( 'snap.svg-min');
+wp_register_script( 'snap.svg-min', get_template_directory_uri() . '/js/snap.svg-min.js',array(), '1.1', true );
+wp_enqueue_script( 'snap.svg-min');
 
 wp_register_script( 'socialcircle', get_template_directory_uri() . '/js/socialCircle.js',array(), '1.1', true );
-  wp_enqueue_script( 'socialcircle');
+wp_enqueue_script( 'socialcircle');
 
-wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js',array(), '1.1', true );
-  wp_enqueue_script( 'modernizr');
+wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js',array(), '1.1', false );
+wp_enqueue_script( 'modernizr');
 
-wp_register_script( 'classie', get_template_directory_uri() . '/js/classie.js',array(), '1.1', true );
-  wp_enqueue_script( 'classie');
-
+wp_register_script( 'classie', get_template_directory_uri() . '/js/classie.js',array(), '1.1', false );
+wp_enqueue_script( 'classie');
 
 wp_register_script( 'jquery.easing.min', get_template_directory_uri() . '/js/jquery.easing.min.js',array('jquery'), '1.1', true );
-  wp_enqueue_script( 'jquery.easing.min');
+wp_enqueue_script( 'jquery.easing.min');
 
-//wp_register_script( 'mainLoader', get_template_directory_uri() . '/js/mainLoader.js',array(), '1.1', true );
-  //wp_enqueue_script( 'mainLoader');
+// wp_register_script( 'mainLoader', get_template_directory_uri() . '/js/mainLoader.js',array(), '1.1', true );
+// wp_enqueue_script( 'mainLoader');
 
 wp_register_script( 'mainWave', get_template_directory_uri() . '/js/mainWave.js',array(), '1.1', true );
-  wp_enqueue_script( 'mainWave');
+wp_enqueue_script( 'mainWave');
 
 
 wp_register_script( 'jquery.newsTicker.min', get_template_directory_uri() . '/js/jquery.newsTicker.min.js',array(), '1.1', true );
-  wp_enqueue_script( 'jquery.newsTicker.min');
+wp_enqueue_script( 'jquery.newsTicker.min');
 
 wp_register_script( 'jquery.nicescroll', get_template_directory_uri() . '/js/jquery.nicescroll.js',array('jquery'), '1.1', true );
-  wp_enqueue_script( 'jquery.nicescroll');
+wp_enqueue_script( 'jquery.nicescroll');
 
 wp_register_script( 'asns', get_template_directory_uri() . '/js/asns.js',array('jquery'), '1.1', true );
-  wp_enqueue_script( 'asns');
+wp_enqueue_script( 'asns');
 
 //wp_register_script( 'typewriter', get_template_directory_uri() . '/js/typewriter.js',array(), '1.1', true );
-  //wp_enqueue_script( 'typewriter');
+//wp_enqueue_script( 'typewriter');
 }
 
 
-if (is_single( ) || is_page() ) {
+if (is_single() || is_page() ) {
 
 wp_enqueue_style( 'norm', get_template_directory_uri() . '/css/article-intro-css/normalize.css', false, '1.0', 'all' ); // Inside a parent theme
+wp_enqueue_style( 'fa', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", false, '', 'all' ); // Inside a parent theme
+wp_enqueue_style( 'bs', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", false, '', 'all' ); // Inside a parent theme
 wp_enqueue_style( 'demo', get_template_directory_uri() . '/css/article-intro-css/demo.css', false, '1.0', 'all' ); // Inside a parent theme
 wp_enqueue_style( 'component', get_template_directory_uri() . '/css/article-intro-css/component.css', false, '1.0', 'all' ); // Inside a parent theme
-// wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', false, '1.0', 'all' ); // Inside a parent theme
 
 wp_deregister_script('jquery');
 wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js", false, null);
 wp_enqueue_script('jquery');
 
-wp_register_script('jqui', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/ui/1.11.4/jquery-ui.js", false, null);
-wp_enqueue_script('jqui');
+wp_register_script('jq-ui', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/ui/1.11.4/jquery-ui.js", false, null);
+wp_enqueue_script('jq-ui');
 
-wp_register_script('bootjs', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", false, null);
-wp_enqueue_script('bootjs');
+wp_register_script('bsjs', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", false, null);
+wp_enqueue_script('bsjs');
 
-wp_register_script( 'jquery.nicescroll', get_template_directory_uri() . '/js/jquery.nicescroll.js',array('jquery'), '1.1', false );
-  wp_enqueue_script( 'jquery.nicescroll');
+wp_register_script( 'jq.nicescroll', get_template_directory_uri() . '/js/jquery.nicescroll.js',array('jquery'), '1.1', false, null);
+wp_enqueue_script( 'jq.nicescroll');
 
 
 }

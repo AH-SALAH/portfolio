@@ -240,8 +240,8 @@ $("#related-posts-rb").on('click',function () {
   	var leftPos = outer.scrollLeft();
   	i = 5;
   	if (liouter <= i) {
-  		return false;
   		$("#related-posts-rb").animate({opacity:'0.3'},500);
+		return false;
   	}else{
   	outer.stop().animate({scrollLeft: leftPos + liouter}, 500,function(){
            //$(".related-posts-content ul li:last").insertBefore(".related-posts-content ul li:first").hide().show("size",{"direction":"left"},"easeInOutElastic","slow");
@@ -256,8 +256,8 @@ $("#related-posts-lb").on('click',function () {
   	var leftPos = outer.scrollLeft();
   	i = 5;
   	if (liouter <= i) {
-  		return false;
   		$("#related-posts-lb").animate({opacity:'0.3'},500);
+		return false;
   	}else{
   	outer.stop().animate({scrollLeft: leftPos - liouter}, 500,function(){
             //$(".related-posts-content ul li:first").insertAfter(".related-posts-content ul li:last").hide().show("slide",{"direction":"left"},"easeInOutElastic","slow");

@@ -54,7 +54,7 @@ function asns_left_author_settings() {
 	register_setting( 'asns-settings-left-user-group', 'left_video_src' );
 	register_setting( 'asns-settings-left-user-group', 'left_video_start' );
 	register_setting( 'asns-settings-left-user-group', 'left_video_end' );
-	//register_setting( 'asns-settings-left-user-group', 'left_github_handler' );
+	register_setting( 'asns-settings-left-user-group', 'left_github_handler' );
 
 	add_settings_section( 'asns-left-user-options', 'Left Author Option', 'asns_left_options', 'asns_left_settings' );
 	
@@ -63,12 +63,12 @@ function asns_left_author_settings() {
 	add_settings_field( 'description', '<span class="dashicons dashicons-edit"></span> Description', 'asns_left_description', 'asns_left_settings', 'asns-left-user-options');
 	add_settings_field( 'twitter', '<span class="dashicons dashicons-twitter"></span> Twitter@', 'asns_left_twitter', 'asns_left_settings', 'asns-left-user-options');	
 	add_settings_field( 'facebook', '<span class="dashicons dashicons-facebook-alt"></span> Facebook', 'asns_left_facebook', 'asns_left_settings', 'asns-left-user-options');	
+	add_settings_field( 'github', 'Github', 'asns_left_github', 'asns_left_settings', 'asns-left-user-options');	
 	add_settings_field( 'color-picker', '<span class="dashicons dashicons-admin-customizer"></span> Side Color', 'asns_left_color_picker', 'asns_left_settings', 'asns-left-user-options');	
 	add_settings_field( 'side-bg', '<span class="dashicons dashicons-format-image"></span> Side Background Image', 'asns_left_bg_img', 'asns_left_settings', 'asns-left-user-options');	
 	add_settings_field( 'side-video', '<span class="dashicons dashicons-video-alt3"></span> Side Background Video', 'asns_left_bg_video', 'asns_left_settings', 'asns-left-user-options');	
 	// add_settings_field( 'video-start', '<span class="dashicons dashicons-video-alt3"></span> Video Start', 'asns_left_video_start', 'asns_left_settings', 'asns-left-user-options');	
 	// add_settings_field( 'video-end', '<span class="dashicons dashicons-video-alt3"></span> Video End', 'asns_left_video_end', 'asns_left_settings', 'asns-left-user-options');	
-	// add_settings_field( 'github', 'Github', 'asns_left_github', 'asns_left_settings', 'asns-left-user-options');	
 }
 
 
@@ -89,7 +89,7 @@ function asns_right_author_settings() {
 	register_setting( 'asns-settings-right-user-group', 'right_video_src' );
 	register_setting( 'asns-settings-right-user-group', 'right_video_start' );
 	register_setting( 'asns-settings-right-user-group', 'right_video_end' );
-	//register_setting( 'asns-settings-right-user-group', 'right_github_handler' );
+	register_setting( 'asns-settings-right-user-group', 'right_github_handler' );
 
 	add_settings_section( 'asns-right-user-options', 'Right Author Option', 'asns_right_options', 'asns_right_settings' );
 
@@ -98,10 +98,12 @@ function asns_right_author_settings() {
 	add_settings_field( 'description', '<span class="dashicons dashicons-edit"></span> Description', 'asns_right_description', 'asns_right_settings', 'asns-right-user-options');
 	add_settings_field( 'twitter', '<span class="dashicons dashicons-twitter"></span> Twitter@', 'asns_right_twitter', 'asns_right_settings', 'asns-right-user-options');	
 	add_settings_field( 'facebook', '<span class="dashicons dashicons-facebook-alt"></span> Facebook', 'asns_right_facebook', 'asns_right_settings', 'asns-right-user-options');	
+	add_settings_field( 'github', 'Github', 'asns_right_github', 'asns_right_settings', 'asns-right-user-options');	
 	add_settings_field( 'color-picker', '<span class="dashicons dashicons-admin-customizer"></span> Side Color', 'asns_right_color_picker', 'asns_right_settings', 'asns-right-user-options');	
 	add_settings_field( 'side-bg', '<span class="dashicons dashicons-format-image"></span> Side Background Image', 'asns_right_bg_img', 'asns_right_settings', 'asns-right-user-options');	
 	add_settings_field( 'side-video', '<span class="dashicons dashicons-video-alt3"></span> Side Background Video', 'asns_right_bg_video', 'asns_right_settings', 'asns-right-user-options');	
-	//add_settings_field( 'github', 'Github', 'asns_right_github', 'asns_right_settings', 'asns-right-user-options');	
+	// add_settings_field( 'video-start', '<span class="dashicons dashicons-video-alt3"></span> Video Start', 'asns_left_video_start', 'asns_left_settings', 'asns-left-user-options');	
+	// add_settings_field( 'video-end', '<span class="dashicons dashicons-video-alt3"></span> Video End', 'asns_left_video_end', 'asns_left_settings', 'asns-left-user-options');	
 
 }
 
@@ -207,6 +209,13 @@ function asns_left_facebook() {
 }
 
 //**************
+//activat the github field
+function asns_left_github() {
+	$leftGithub = esc_attr( get_option('left_github_handler' ) );
+	echo '<input type="text" name="left_github_handler"  value="'.$leftGithub.'" placeholder="github_handler" /> ';
+}
+
+//**************
 //activat the left color picker
 function asns_left_color_picker() {
 	$leftColor = esc_attr( get_option('left_color_picker_handler' ) );
@@ -259,15 +268,7 @@ function asns_left_bg_video() {
 	// }
 }
 
-/*
-//**************
-//activat the github field
-function asns_left_github() {
-	$leftGithub = esc_attr( get_option('left_github_handler' ) );
-	echo '<input type="text" name="left_github_handler"  value="'.$leftGithub.'" placeholder="github_handler" /> ';
-}
 
-*/
 
 
 
@@ -333,6 +334,12 @@ function asns_right_facebook() {
 	echo '<input type="text" name="right_facebook_handler"  value="'.$rightFacebook.'" placeholder="facebook_handler" /> ';
 }
 
+//**************
+//activat the github field
+function asns_right_github() {
+	$rightGithub = esc_attr( get_option('right_github_handler' ) );
+	echo '<input type="text" name="right_github_handler"  value="'.$rightGithub.'" placeholder="github_handler" /> ';
+}
 
 //**************
 //activat the right color picker
@@ -388,14 +395,6 @@ function asns_right_bg_video() {
 	// }
 }
 
-/*
-//**************
-//activat the github field
-function asns_right_github() {
-	$rightGithub = esc_attr( get_option('right_github_handler' ) );
-	echo '<input type="text" name="right_github_handler"  value="'.$rightGithub.'" placeholder="github_handler" /> ';
-}
-*/
 
 //*******************************************************
 //sanitization settings

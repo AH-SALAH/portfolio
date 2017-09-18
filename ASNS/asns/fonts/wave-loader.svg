@@ -72,7 +72,6 @@ stroke-dasharray: 1500;
   }
   to {
     stroke-dashoffset: 0;
-    fill:skyblue;
   }
 
 }
@@ -85,7 +84,6 @@ stroke-dasharray: 1500;
   }
   to {
     stroke-dashoffset: 0;
-    fill:skyblue;
   }
 
 }

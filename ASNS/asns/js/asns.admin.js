@@ -105,13 +105,13 @@ $("a.a-mis").on('click',function(e){
 			return;
 			});
 //---------------------------------------------------
-		$("input#first-name,input#last-name").keypress(function(e){
+		$("input#first-name,input#last-name").keyup(function(e){
 		var val1 = $("input#first-name").val();
 		var val2 = $("input#last-name").val();
 		$(".asns-username").text(val1 +' '+ val2);
 		});
 
-		$("#user-description").keypress(function(e){
+		$("#user-description").keyup(function(e){
 		var val = $(this).val();
 		var space = ' ';
 		$(".asns-description").text(val + space);

@@ -101,18 +101,18 @@
 
 <!-- <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
  --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<!----><!--<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/socialcircle.js"></script> 
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/modernizr.custom.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/classie.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/mainLoader.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/mainWave.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/asns.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.newsTicker.min.js"></script>
-<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/typewriter.js"></script>
+<!----><!--<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/socialcircle.js"></script> 
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/classie.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/mainLoader.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/mainWave.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/asns.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/jquery.newsTicker.min.js"></script>
+<script type="text/javascript" src="<?php //echo esc_url( get_template_directory_uri() ); ?>/js/typewriter.js"></script>
 -->
 <!--<script type="text/javascript" src="js/marquee.js"></script>-->
-
+<?php wp_footer(); ?>
 <!--/**************************************************************************/-->		
 
 	</body>
