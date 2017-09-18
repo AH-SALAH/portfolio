@@ -1,0 +1,1 @@
+# Simple and Responsive Video Site template
