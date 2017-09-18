@@ -1,5 +1,5 @@
-# Unique WordPress Personal Blog Theme
+# Unique WordPress Personal Blog Theme With Premium CMS Customization
 
-<a href="http://as.iblogger.org" target="_blank"># Demo</a>
+[# Demo](http://as.iblogger.org)
 
 
