@@ -1,7 +1,10 @@
 # Portfolio
 私のポルトです・・ :v: 
-<br>
+<br/>
 こちらに私のポルトが見つけます。。
-<br><br>
+<br/><br/>
 ***
-License: ![(https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg "CC")](https://creativecommons.org/licenses/by-sa/4.0/)
+License: [![CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg "CC")](https://creativecommons.org/licenses/by-sa/4.0/)
+<br/>
+<img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" 
+alt="CC" width="140" height="80" border="10" />
