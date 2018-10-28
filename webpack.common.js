@@ -94,7 +94,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin('dist',{}),
         new HtmlWebpackPlugin({
-            title: 'Webpack Starter',
+            title: 'Portfolio',
             filename: 'index.html',
             template: './src/index.html',
             minify: {
@@ -107,11 +107,11 @@ module.exports = {
             hash: true,
             // favicon: path.resolve(__dirname,'./src/assets/img/icon.png'),
             meta: {
-                description: 'Webpack Starter',
+                description: 'Portfolio',
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
                 keywords: 'Webpack,Starter',
                 author: 'Ahmed Salah',
-                'application-name': 'Webpack Starter', //Name of web app (only should be used if the website is used as an app)
+                'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
                 'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
                 robots: 'index,follow', //All search engine crawling and indexing
             },
@@ -132,11 +132,11 @@ module.exports = {
             hash: true,
             // favicon: path.resolve(__dirname,'./src/assets/img/icon.png'),
             meta: {
-                description: 'Webpack Starter',
+                description: 'Portfolio',
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
                 keywords: 'Webpack,Starter',
                 author: 'Ahmed Salah',
-                'application-name': 'Webpack Starter', //Name of web app (only should be used if the website is used as an app)
+                'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
                 'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
                 robots: 'index,follow', //All search engine crawling and indexing
             },
@@ -156,11 +156,11 @@ module.exports = {
             hash: true,
             // favicon: path.resolve(__dirname,'./src/assets/img/icon.png'),
             meta: {
-                description: 'Webpack Starter',
+                description: 'Portfolio',
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
                 keywords: 'Webpack,Starter',
                 author: 'Ahmed Salah',
-                'application-name': 'Webpack Starter', //Name of web app (only should be used if the website is used as an app)
+                'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
                 'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
                 robots: 'index,follow', //All search engine crawling and indexing
             },
