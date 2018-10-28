@@ -1,0 +1,51 @@
+/**
+ * @author Ahmed Salah
+ * @github AH-SALAH
+ * @create date 2018-07-07 10:04:13
+ * @modify date 2018-07-07 10:04:13
+ * @desc main scss
+ * @Copyright (c) 2018
+*/
+
+@import "./layout/variables";
+@import "./layout/mixins";
+
+//================================
+//// Option A: Include all of Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//// Option B: Include parts of Bootstrap
+//// Those are Required
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+
+//// Those are Optional
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";
+
+//================================
+// import All fontawesome
+// @import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
+
+// Import individual fontawesome files
+@import "./fontawesome/fa-regular.scss";
+@import "./fontawesome/fa-solid.scss";
+@import "./fontawesome/fa-brands.scss";
+@import "./fontawesome/fontawesome.scss";
+
+//================================
+// import some ggl fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+//================================
+// Start styling
+
+body{
+    // background-color: $body-bg;
+    // color: $teal;
+    overflow-x: hidden;
+}
