@@ -10,6 +10,11 @@ importAll(require.context('../img/', true, /\.(png|jpe?g|gif|svg)$/));
 importAll(require.context('../../../src/', true, /(\.(ico|txt|xml|htaccess|webmanifest)?$|(tile\.png|tile-wide\.png))/));
 
 //================================
+import "../scss/fontawesome/fa-regular.scss";
+import "../scss/fontawesome/fa-solid.scss";
+import "../scss/fontawesome/fa-brands.scss";
+import "../scss/fontawesome/fontawesome.scss";
+//================================
 import "../scss/main.scss";
 //================================
 // import "jquery";
