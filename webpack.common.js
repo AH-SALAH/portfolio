@@ -6,7 +6,7 @@ const   webpack = require('webpack'),
 module.exports = {
     entry: {
         main: path.resolve(__dirname,'./src/assets/js/main.js'),
-        about: path.resolve(__dirname,'./src/assets/js/about.js'),
+        // about: path.resolve(__dirname,'./src/assets/js/about.js'),
     },
     output:{
         path: path.resolve(__dirname, 'dist'),
@@ -109,7 +109,7 @@ module.exports = {
             meta: {
                 description: 'Portfolio',
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-                keywords: 'Webpack,Starter',
+                keywords: 'portfolio,tech',
                 author: 'Ahmed Salah',
                 'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
                 'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
@@ -118,30 +118,30 @@ module.exports = {
             chunks: ['main'],
             // excludeChunks: ['contact'],
         }),
-        new HtmlWebpackPlugin({
-            title: 'About page',
-            filename: 'about.html',
-            template: './src/about.html',
-            minify: {
-                collapseWhitespace:true,
-                // conservativeCollapse:true,
-                collapseInlineTagWhitespace:true,
-                // preserveLineBreaks:true,
-                caseSensitive:true,
-            },
-            hash: true,
-            // favicon: path.resolve(__dirname,'./src/assets/img/icon.png'),
-            meta: {
-                description: 'Portfolio',
-                viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-                keywords: 'Webpack,Starter',
-                author: 'Ahmed Salah',
-                'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
-                'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
-                robots: 'index,follow', //All search engine crawling and indexing
-            },
-            chunks: ['about']
-        }),
+        // new HtmlWebpackPlugin({
+        //     title: 'About page',
+        //     filename: 'about.html',
+        //     template: './src/about.html',
+        //     minify: {
+        //         collapseWhitespace:true,
+        //         // conservativeCollapse:true,
+        //         collapseInlineTagWhitespace:true,
+        //         // preserveLineBreaks:true,
+        //         caseSensitive:true,
+        //     },
+        //     hash: true,
+        //     // favicon: path.resolve(__dirname,'./src/assets/img/icon.png'),
+        //     meta: {
+        //         description: 'Portfolio',
+        //         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        //         keywords: 'portfolio,tech',
+        //         author: 'Ahmed Salah',
+        //         'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
+        //         'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
+        //         robots: 'index,follow', //All search engine crawling and indexing
+        //     },
+        //     chunks: ['about']
+        // }),
         new HtmlWebpackPlugin({
             title: '404 page',
             filename: '404.html',
@@ -158,7 +158,7 @@ module.exports = {
             meta: {
                 description: 'Portfolio',
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-                keywords: 'Webpack,Starter',
+                keywords: 'portfolio,tech',
                 author: 'Ahmed Salah',
                 'application-name': 'Portfolio', //Name of web app (only should be used if the website is used as an app)
                 'theme-color': '#4285f4', //Theme Color for Chrome, Firefox OS and Opera
