@@ -6,13 +6,14 @@
 <br/>
 --
 
-- Techs Used:
+## Techs Used:
 
 - [bootstrap 4](http://getbootstrap.com)
 - [jquery](http://jquery.net)
 - [fortawesome 5](http://fontawesome.com)
 
 > Based on the [HTML5-boilerplate](https://github.com/h5bp/html5-boilerplate)
+
 --
 [Page](https://ah-salah.github.io/portfolio/)
 --
