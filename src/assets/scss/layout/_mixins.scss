@@ -88,11 +88,11 @@
 		// BORDERS  MIXIN
 // ***************************** //
 
-@mixin border($args...) {
-	border: $args;
+@mixin border($side,$args...) {
+	#{$side}: $args;
 
   @if $args == none {
-    @include border(none);
+    @include border(border,0 none);
   }
 
 }

@@ -16,6 +16,7 @@ import "../scss/main.scss";
 //================================
 //// Import Bootstrap’s JavaScript
 import "bootstrap";
+import { clearInterval, setInterval } from "timers";
 //// Alternatively, you may import plugins individually as needed:
 // import 'bootstrap/js/dist/util';
 // import 'bootstrap/js/dist/dropdown';
@@ -26,15 +27,83 @@ import "bootstrap";
 //================================
 // Start main js
 
+const mainObj = {
+    loadMoreBtn : $(".load-more-btn"),
+    loader : $(".loader"),
+    moreContent: $(".more-content"),
+    projsContent: $(".projs-content"),
+    mediaItems: $(".media"),
+    init: function() {
+        let obj = this;
+        obj.leftSlideIn(obj.mediaItems);
+        obj.loadMoreBtn.click(function(){
+            obj.disableLoadMoreBtn();
+            obj.loadMoreDots();
+            obj.showBtnLoader();
+            setTimeout(() =>{
+                obj.projsContent.append(obj.moreContent.html());
+                obj.leftSlideIn(obj.moreContent);
+                obj.hideBtnLoader();
+                obj.noMore();
+                // obj.enableLoadMoreBtn();
 
-let tag = $(".card-title").eq(0).text();
-console.log(tag);
+                //TODO : Get data from github
+                // $.ajax({
+                //     type: 'GET',
+                //     url:'https://api.github.com/users/AH-SALAH/repos',
+                //     success: function(resp) {
+                //         console.log(resp);
+                //     },
+                //     failed: function(er,status,xhr) {
+                //         console.log(er,status);
+                //     }
+                // });
+            },3000);
+        });
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-});
+        //===================================
+        //enable tooltip
+        // $('[data-toggle="tooltip"]').tooltip();
 
+    },
+    showBtnLoader: function() {
+        this.loader.removeClass('d-none');
+        this.loader.addClass('d-inline-block');
+    },
+    hideBtnLoader: function() {
+        this.loader.removeClass('d-inline-block');
+        this.loader.addClass('d-none');
+    },
+    enableLoadMoreBtn: function() {
+        this.loadMoreBtn.prop('disabled',false);
+        this.loadMoreBtn.find('.load-text').text('Load More');
+    },
+    disableLoadMoreBtn: function() {
+        this.loadMoreBtn.prop('disabled',true);
+    },
+    loadMoreDots: function() {
+        this.loadMoreBtn.find('.load-text').text('Load More..');
+    },
+    noMore: function() {
+        this.loadMoreBtn.find('.load-text').text('no More for now :(');
+        this.disableLoadMoreBtn();
+    },
+    leftSlideIn: function(items) {
+        var x = 0,
+            inter = setInterval(function(){
+                if(x == items.length){
+                    clearInterval(inter);
+                    return;
+                }else{
+                    items[x].classList.add('left-slide-in');
+                }
+                x+=1;
+            },700);
+    }
+};
 
+//init
+mainObj.init();
 
 
 
