@@ -8,7 +8,7 @@
 
 ## Techs Used:
 
-<img src="https://webpack.js.org/assets/icon-square-big.svg" title="webpack" alt="webpack" width="50" height="50" style="display:inline-block">  <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="40" height="40" style="display:inline-block">  <img src="https://www.ayokasystems.com/wp-content/uploads/jquery-logo-e1450293226548.png" width="164" height="164" alt="jquery logo" style="display:inline-block">  <img src="https://pbs.twimg.com/profile_images/884859320503894016/FWL86acG_400x400.jpg" alt="Font Awesome 5 Free" width="160" height="160" style="display:inline-block">
+<img src="https://webpack.js.org/assets/icon-square-big.svg" title="webpack" alt="webpack" width="50" height="50" style="display:inline-block">  <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="40" height="40" style="display:inline-block">  <img src="https://www.ayokasystems.com/wp-content/uploads/jquery-logo-e1450293226548.png" width="70" height="30" alt="jquery logo" style="display:inline-block">  <img src="https://pbs.twimg.com/profile_images/884859320503894016/FWL86acG_400x400.jpg" alt="Font Awesome 5 Free" width="40" height="40" style="display:inline-block">
 
 - [Webpack](https://github.com/webpack/webpack/)
 - [bootstrap 4](http://getbootstrap.com)
