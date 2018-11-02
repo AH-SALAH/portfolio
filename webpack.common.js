@@ -40,8 +40,8 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
-                        // publicPath: 'dist/css',
-                        outputPath: 'css/fonts/'
+                        // publicPath: 'dist/fonts',
+                        outputPath: 'fonts/'
                     }
                 }],
                 exclude: /node_modules/
