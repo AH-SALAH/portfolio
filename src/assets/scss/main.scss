@@ -31,7 +31,7 @@
 // import All fontawesome
 // @import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
 //================================
-$fa-font-path: "/fonts/" !default; //customize fonts path
+$fa-font-path: "./fonts/" !default; //customize fonts path
 
 // Import individual fontawesome files
 @import "./fontawesome/fa-regular.scss";
