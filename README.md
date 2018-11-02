@@ -8,10 +8,15 @@
 
 ## Techs Used:
 
-- [Webpack](https://github.com/webpack/webpack/) <img src="https://webpack.js.org/assets/icon-square-big.svg" title="webpack" alt="webpack" width="30" height="30">
-- [bootstrap 4](http://getbootstrap.com) <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="30" height="30">
+<img src="https://webpack.js.org/assets/icon-square-big.svg" title="webpack" alt="webpack" width="30" height="30">
+<img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="30" height="30">
+<img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/jquery/jquery.png" width="64" height="64" alt="jquery logo">
+<img src="https://img.fortawesome.com/349cfdf6/logo-fa-free.svg" alt="Font Awesome 5 Free" width="30" height="30">
+
+- [Webpack](https://github.com/webpack/webpack/)
+- [bootstrap 4](http://getbootstrap.com)
 - [jquery](http://jquery.net)
-- [fortawesome 5](http://fontawesome.com) <img src="https://img.fortawesome.com/349cfdf6/logo-fa-free.svg" alt="Font Awesome 5 Free" width="30" height="30">
+- [fortawesome 5](http://fontawesome.com)
 
 > Based on the [HTML5-boilerplate](https://github.com/h5bp/html5-boilerplate)
 
