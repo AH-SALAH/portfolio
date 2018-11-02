@@ -8,7 +8,7 @@
 
 ## Techs Used:
 
-- Webpack [!(https://webpack.js.org/assets/icon-square-big.svg)](http://webpack.com)
+- Webpack ![webpack](https://webpack.js.org/assets/icon-square-big.svg)(http://webpack.com)
 - [bootstrap 4](http://getbootstrap.com)
 - [jquery](http://jquery.net)
 - [fortawesome 5](http://fontawesome.com)
