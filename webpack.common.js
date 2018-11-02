@@ -41,7 +41,7 @@ module.exports = {
                     options: {
                         name: '[name].[ext]',
                         // publicPath: 'dist/fonts',
-                        outputPath: 'fonts/'
+                        outputPath: 'css/fonts/'
                     }
                 }],
                 exclude: /node_modules/
