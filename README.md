@@ -8,7 +8,7 @@
 
 ## Techs Used:
 
-- [Webpack](https://github.com/webpack/webpack/) <img src="https://webpack.js.org/assets/icon-square-big.svg" title="webpack" alt="webpack" width="100" height="100">
+- [Webpack](https://github.com/webpack/webpack/) <img src="https://webpack.js.org/assets/icon-square-big.svg" title="webpack" alt="webpack" width="50" height="50">
 - [bootstrap 4](http://getbootstrap.com)
 - [jquery](http://jquery.net)
 - [fortawesome 5](http://fontawesome.com)
