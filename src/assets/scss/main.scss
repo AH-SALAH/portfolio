@@ -106,7 +106,7 @@ body{
     position: absolute;
     bottom: 15px;
     left: 15px;
-    right: 15px;
+    // right: 15px;
 }
 
 .featured-meta .featured-projs .git-link{
@@ -202,6 +202,11 @@ body{
     .projs-img{
         width: 100%!important;
         height: 250px!important;
+    }
+
+    .featured-projs figcaption{
+        left: 15px;
+        right: 15px;
     }
 }
 
