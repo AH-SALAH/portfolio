@@ -68,14 +68,48 @@ body{
 //site css
 
 .main-container{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px 0px rgba(0,0,0,0.2);
 }
 
-.featured-meta {
+// .featured-meta {
+//     position: relative;
+// }
+
+.featured-projs{
     position: relative;
+    overflow: hidden;
 }
 
-.featured-meta .git-link{
+.featured-projs figure{
+    margin-bottom: 0;
+}
+
+.featured-projs figcaption{
+    position: absolute;
+    bottom: 15px;
+    left: -100%;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    border-left: 3px solid $prime;
+    padding: 1em;
+    max-width: 100%;
+    @include transition(left 0.3s ease-out);
+}
+
+.featured-projs figcaption > p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.featured-projs:hover figcaption{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+
+.featured-meta .featured-projs .git-link{
     position: absolute;
     right: 15px;
     bottom: 15px;
@@ -91,7 +125,7 @@ body{
 }
 
 .media{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
     @include opacity(0); 
     @include translate(-150px,0);
