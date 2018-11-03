@@ -40,7 +40,7 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
-                        // publicPath: 'dist/fonts',
+                        // publicPath: 'dist',
                         outputPath: 'css/fonts/'
                     }
                 }],
