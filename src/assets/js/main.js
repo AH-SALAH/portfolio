@@ -1,3 +1,12 @@
+/**
+ * @author Ahmed Salah
+ * @github AH-SALAH
+ * @create date 2018-11-03 03:23:33
+ * @modify date 2018-11-03 03:23:33
+ * @desc [main.js]
+*/
+
+
 // import all files from a dir that match regex
 let cache = {};
 function importAll (r) {
