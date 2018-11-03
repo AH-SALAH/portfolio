@@ -34,18 +34,18 @@ module.exports = {
                 },
                 exclude: /node_modules|tile\.png|tile-wide\.png|^(fa-)*(.*?)\.(svg)$/
             },
-            {
-                test: /\.(woff(2)?|ttf|eot)(?=\?[A-Za-z0-9])?$|^(fa-)*(.*?)\.(svg)$/i, //(\?v=\d+\.\d+\.\d+)?
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        // publicPath: 'dist',
-                        outputPath: 'css/fonts/'
-                    }
-                }],
-                exclude: /node_modules/
-            },
+            // {
+            //     test: /\.(woff(2)?|ttf|eot)(?=\?[A-Za-z0-9])?$|^(fa-)*(.*?)\.(svg)$/i, //(\?v=\d+\.\d+\.\d+)?
+            //     use: [{
+            //         loader: 'file-loader',
+            //         options: {
+            //             name: '[name].[ext]',
+            //            // publicPath: 'fonts/',
+            //             outputPath: 'css/fonts/'
+            //         }
+            //     }],
+            //     exclude: /node_modules/
+            // },
             {
                 test: /(\.(ico|txt|xml|htaccess|webmanifest)?$|(tile\.png|tile-wide\.png))/i,
                 use: [{

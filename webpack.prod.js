@@ -16,6 +16,18 @@ module.exports = merge(common, {
                     'sass-loader',
                   ],
             },
+            {
+                test: /\.(woff(2)?|ttf|eot)(?=\?[A-Za-z0-9])?$|^(fa-)*(.*?)\.(svg)$/i, //(\?v=\d+\.\d+\.\d+)?
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        publicPath: 'fonts/',
+                        outputPath: 'css/fonts/'
+                    }
+                }],
+                exclude: /node_modules/
+            },
         ]
     },
     plugins: [
