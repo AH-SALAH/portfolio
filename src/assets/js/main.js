@@ -10,7 +10,19 @@
 // import all files from a dir that match regex
 let cache = {};
 function importAll (r) {
-    r.keys().forEach(key => cache[key] = r(key));
+    r.keys().forEach((key) => {
+        cache[key] = r(key);
+
+        // get img which need to be converted to base64 by url-loader
+        let getimgstr = key.split('/')[1].split('.')[0],
+            img = document.querySelector('[alt="'+getimgstr+'"]'),
+            imgsArray = ['screenshot']; // list of imgs name
+            // console.log("getimgstr: ",getimgstr);
+        if(img && $.inArray(getimgstr,imgsArray) > -1){
+            img.src = cache[key];
+            // console.log("ifistrue: ",img);
+        }
+    });
 }
 //================================
 // import all imgs
@@ -35,6 +47,10 @@ import { clearInterval, setInterval } from "timers";
 
 //================================
 // Start main js
+
+// import screenshot from '../img/screenshot.jpg';
+// let img = document.querySelector('[alt="screenshot"]');
+// img.src = screenshot;
 
 const mainObj = {
     loadMoreBtn : $(".load-more-btn"),

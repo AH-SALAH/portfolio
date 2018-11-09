@@ -22,17 +22,94 @@ module.exports = {
                 },
                 exclude: /node_modules/
             },
+            // {
+            //     test: /\.(jpe?g|png|gif)$/i,
+            //     loader: 'url-loader',
+            //     options: {
+            //       // Images larger than 10 KB won’t be inlined
+            //       limit: 10 * 1024,
+            //       name: '[name].[ext]',
+            //       // publicPath: 'dist/img',
+            //       outputPath: 'img/'
+            //     },
+            //     exclude: /node_modules|tile\.png|tile-wide\.png|^(fa-)*(.*?)\.(svg)$/i
+            // },
+            {
+                test: /\.svg$/i,
+                loader: 'svg-url-loader',
+                options: {
+                  // Images larger than 10 KB won’t be inlined
+                  limit: 10 * 1024,
+                  // Remove quotes around the encoded URL – they’re rarely useful
+                  noquotes: true,
+                  iesafe: true, //This option falls back to the file-loader if the file contains a style-element and the encoded size is above 4kB no matter the limit specified.IE (including IE11) stops parsing style-elements in SVG data-URIs longer than 4kB
+                  stripdeclarations: true, //tell the loader to strip out any XML declaration, e.g. <?xml version="1.0" encoding="UTF-8"?> at the beginning of imported SVGs. Internet Explorer (tested in Edge 14) cannot handle XML declarations in CSS data URLs (content: url("data:image/svg...")).
+                  name: '[name].[ext]',
+                  // publicPath: 'dist/img',
+                  outputPath: 'img/'
+                },
+                exclude: /node_modules|tile\.png|tile-wide\.png|^(fa-)*(.*?)\.(svg)$/i
+            },
             {
                 test:/\.(jpe?g|png|gif|svg)$/i,
-                use:{
-                    loader:'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        // publicPath: 'dist/img',
-                        outputPath: 'img/'
-                    }
-                },
-                exclude: /node_modules|tile\.png|tile-wide\.png|^(fa-)*(.*?)\.(svg)$/
+                use:[
+                        {
+                            loader: 'url-loader',
+                            options: {
+                              // Images larger than 10 KB won’t be inlined
+                              limit: 10 * 1024,
+                              name: '[name].[ext]',
+                              // publicPath: 'dist/img',
+                              outputPath: 'img/'
+                            },
+                        },
+                        // {
+                        //     loader: 'svg-url-loader',
+                        //     options: {
+                        //         // Images larger than 10 KB won’t be inlined
+                        //         limit: 10 * 1024,
+                        //         // Remove quotes around the encoded URL – they’re rarely useful
+                        //         noquotes: true,
+                        //         iesafe: true, //This option falls back to the file-loader if the file contains a style-element and the encoded size is above 4kB no matter the limit specified.IE (including IE11) stops parsing style-elements in SVG data-URIs longer than 4kB
+                        //         stripdeclarations: true, //tell the loader to strip out any XML declaration, e.g. <?xml version="1.0" encoding="UTF-8"?> at the beginning of imported SVGs. Internet Explorer (tested in Edge 14) cannot handle XML declarations in CSS data URLs (content: url("data:image/svg...")).
+                        //         name: '[name].[ext]',
+                        //         // publicPath: 'dist/img',
+                        //         outputPath: 'img/'
+                        //     }
+                        // },
+                        {
+                            loader: 'image-webpack-loader',
+                            options: {
+                                // Specify enforce: 'pre' to apply the loader
+                                // before url-loader/svg-url-loader
+                                // and not duplicate it in rules with them
+                                enforce: 'pre',
+                                //bypassOnDebug: true, // no processing is done when webpack 'debug' mode is used and the loader acts as a regular file-loader
+                                //disable: true, // Same functionality as bypassOnDebug option, but doesn't depend on webpack debug mode, which was deprecated in 2.x. use this option if you're running webpack@2.x or newer.
+                                mozjpeg: {
+                                  progressive: true,
+                                  quality: 65
+                                },
+                                // optipng.enabled: false will disable optipng
+                                optipng: {
+                                //   enabled: false,
+                                  optimizationLevel:7
+                                },
+                                pngquant: {
+                                  quality: '65-90',
+                                  speed: 4
+                                },
+                                gifsicle: {
+                                  interlaced: false,
+                                },
+                                // the webp option will enable WEBP
+                                // webp: {
+                                //   quality: 75
+                                // }
+                            }
+                        }
+                    ],
+                exclude: /node_modules|tile\.png|tile-wide\.png|^(fa-)*(.*?)\.(svg)$/i
             },
             // {
             //     test: /\.(woff(2)?|ttf|eot)(?=\?[A-Za-z0-9])?$|^(fa-)*(.*?)\.(svg)$/i, //(\?v=\d+\.\d+\.\d+)?
@@ -56,10 +133,10 @@ module.exports = {
                         // outputPath: 'dist/'
                     },
                 }],
-                exclude: /node_modules/
+                exclude: /node_modules/i
             }
             // {
-            //     test:/\.html$/,
+            //     test:/\.html$/i,
             //     use:{
             //         loader:'file-loader',
             //         options: {
@@ -70,7 +147,7 @@ module.exports = {
             //     exclude: path.resolve(__dirname,'src/index.html')
             // },
             // {
-            //     test: /\.html$/,
+            //     test: /\.html$/i,
             //     use: [ 
             //         'file-loader?name=[name].[ext]',
             //         'extract-loader',
