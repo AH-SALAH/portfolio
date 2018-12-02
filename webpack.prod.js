@@ -1,5 +1,6 @@
 const   merge = require('webpack-merge'),
         common = require('./webpack.common.js'),
+        path = require('path'),
         MiniCssExtractPlugin = require("mini-css-extract-plugin");
     
 module.exports = merge(common, {
@@ -17,7 +18,7 @@ module.exports = merge(common, {
                   ],
             },
             {
-                test: /\.(woff(2)?|ttf|eot)(?=\?[A-Za-z0-9])?$|^(fa-)*(.*?)\.(svg)$/i, //(\?v=\d+\.\d+\.\d+)?
+                test: /\.(woff(2)?|ttf|eot)(?=\?[A-Za-z0-9])?$|\.svg$/i, //(\?v=\d+\.\d+\.\d+)?
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -26,7 +27,7 @@ module.exports = merge(common, {
                         outputPath: 'css/fonts/'
                     }
                 }],
-                exclude: /node_modules/
+                exclude: [/node_modules/i,path.resolve(__dirname, './src/assets/img')]
             },
         ]
     },

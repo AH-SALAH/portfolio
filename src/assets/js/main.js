@@ -16,9 +16,9 @@ function importAll (r) {
         // get img which need to be converted to base64 by url-loader
         let getimgstr = key.split('/')[1].split('.')[0],
             img = document.querySelector('[alt="'+getimgstr+'"]'),
-            imgsArray = ['screenshot']; // list of imgs name
+            imgsArray = []; // list of imgs name
             // console.log("getimgstr: ",getimgstr);
-        if(img && $.inArray(getimgstr,imgsArray) > -1){
+        if(img && /*$.inArray(getimgstr,imgsArray)*/imgsArray.indexOf(getimgstr) > -1){
             img.src = cache[key];
             // console.log("ifistrue: ",img);
         }
